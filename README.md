@@ -39,7 +39,7 @@ In response to the need for a well-suited Bangla question-answering dataset, in 
     'answers': [{'text': 'দিল্লি, করাচি ও মুম্বইয', 'answer_start': 345}]},
 ```  
   
-[BQuAD is available here.](https://drive.google.com/drive/folders/1SR97VY3uoBw5erATXM7xzMTHXL6mLW0G?usp=sharing)
+[BQuAD is available here.](https://github.com/arnabx007/BQuAD-A-Bangla-QA-Dataset/blob/master/bquad.json)
  
 ## BERT-Bangla
 
