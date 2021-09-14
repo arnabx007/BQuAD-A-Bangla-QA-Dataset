@@ -16,4 +16,5 @@ output = model(encoded_input['input_ids'])
 print(output[0].shape)
 print(output[1].shape)
 
-print(len(encoded_input['input_ids'][0]))
+if output:
+     print('Model loaded successfully')
