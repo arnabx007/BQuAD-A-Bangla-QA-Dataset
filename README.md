@@ -56,7 +56,7 @@ The model was pre-trained on a cloud v3-8 TPU (128GB of memory) for 35 hours for
 [original BERT repository.](https://github.com/google-research/bert)
 
 
-[Download the BERT-Bangla torch model from here.](https://drive.google.com/drive/folders/1SR97VY3uoBw5erATXM7xzMTHXL6mLW0G?usp=sharing)
+Download the BERT-Bangla torch model from [here](https://drive.google.com/file/d/1otZvEbA5WyZkyQ4e9ZaSopXzPPnVvM7d/view?usp=sharing) and place it in the **bert-bangla-model** directory alongside it's config.json and vocab.txt file.
 
 ### Benchmark scores: 
 Model         |	Sentiment Analysis | Hate SpeechV2	| News Topic Classification	 | Average Accuracy
