@@ -1,10 +1,10 @@
 # BQuAD - A Bangla Question Answering Dataset
 
-For the final year thesis project we had to develop an extractive Question-Answering system for educational purposes. We chose to go with the language model approach. At that time (Q4 2019) there were only 2 language model publicly available: [Multilingual-BERT (mBERT)](https://github.com/google-research/bert/blob/master/multilingual.md) & [Bangla-Electra](https://huggingface.co/monsoon-nlp/bangla-electra). 
+*For the final year thesis project we had to develop an extractive Question-Answering system for educational purposes. We chose to go with the language model approach. At that time (Q4 2019) there were only 2 language model publicly available: [Multilingual-BERT (mBERT)](https://github.com/google-research/bert/blob/master/multilingual.md) & [Bangla-Electra](https://huggingface.co/monsoon-nlp/bangla-electra).*
 
-To serve our purpose well, we trained a BERT model in Bangla, BERT-Bangla which is a medium sized BERT model (8 attention layers compared to the 12 layers in general BERT base models). Also there wasn't any Bangla QA dataset publicly available. Hence, we developed a Bangla reading comprehension dataset BQuAD (following the pattern of SQuAD v1.1). 
+*To serve our purpose well, we trained a BERT model in Bangla, BERT-Bangla which is a medium sized BERT model (8 attention layers compared to the 12 layers in general BERT base models). Also there wasn't any Bangla QA dataset publicly available. Hence, we developed a Bangla reading comprehension dataset BQuAD (following the pattern of SQuAD v1.1).*
 
-The paper **'An Approach to Extractive Bangla Question Answering Based On BERT-Bangla And BQuAD'** is available on ieexplore. 
+*The paper* **'An Approach to Extractive Bangla Question Answering Based On BERT-Bangla And BQuAD'** *is available on ieexplore.* 
 https://ieeexplore.ieee.org/document/9528178
 
 ## BQuAD
@@ -43,7 +43,7 @@ In response to the need for a well-suited Bangla question-answering dataset, in 
  
 ## BERT-Bangla
 
-We also pretrained and released a medium sized BERT model in Bangla on about 10GB of Bangla text data. We are releasing it with the benchmark scores comparing with other concurrent exisiting models: mBERT and Bangla Electra. The model was pretrained with the following configurations:
+We also pretrained and released a medium sized BERT model from scratch on about 10GB of raw Bangla text data. We are releasing it with the benchmark scores comparing with other concurrent exisiting models: mBERT and Bangla Electra. The model was pretrained with the following configurations:
 
 * Vocab Size: 75000
 * No. of Parameters: 65 Million
@@ -58,7 +58,7 @@ The model was pre-trained on a cloud v3-8 TPU (128GB of memory) for 35 hours for
 
 Download the BERT-Bangla torch model from [here](https://drive.google.com/file/d/1otZvEbA5WyZkyQ4e9ZaSopXzPPnVvM7d/view?usp=sharing) and place it in the **bert-bangla-model** directory alongside it's config.json and vocab.txt file.
 
-### Benchmark scores: 
+### Classification Benchmark Scores: 
 Model         |	Sentiment Analysis | Hate SpeechV2	| News Topic Classification	 | Average Accuracy
 ------------- | ------------------ | -------------  | -------------------------  | ----------------
 mBERT  | 68.1% | 50.9% | 72.3% | 63.7%
@@ -69,7 +69,8 @@ The sentiment analysis and hate speech detection datasets were taken from here: 
 
 For the news topic classification task, a publicly available dataset was used taken from here: 
 
-The BERT-Bangla model had achieved an Exact Match accuracy of 45% and F1 accuracy of 78.5% on the BQuAD Dataset.
+### QA Fine-Tuning Score:
+The BERT-Bangla model had achieves an Exact Match accuracy of 56% and F1 accuracy of 74.5% on the [BQuAD](https://github.com/arnabx007/BQuAD-A-Bangla-QA-Dataset/blob/master/bquad.json) Dataset (Updated).
 
 
 ## Citation:
